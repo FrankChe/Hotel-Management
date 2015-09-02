@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEAF9F3F-8043-47DF-8C9D-01A8649BDF7D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hotel</RootNamespace>
+    <AssemblyName>Hotel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist\ChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist\ChangePwd.Designer.cs">
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ChangePwdManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\ChangePwdManager.Designer.cs">
+      <DependentUpon>ChangePwdManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="Guest.cs" />
+    <Compile Include="HotelRoom.cs" />
+    <Compile Include="Login\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ManagerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\ManagerLogin.Designer.cs">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\ManagerMain.Designer.cs">
+      <DependentUpon>ManagerMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerPhoneQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\ManagerPhoneQuery.Designer.cs">
+      <DependentUpon>ManagerPhoneQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs" />
+    <Compile Include="Manager\NewReceptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\NewReceptionist.Designer.cs">
+      <DependentUpon>NewReceptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ReceptionistFired.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\ReceptionistFired.Designer.cs">
+      <DependentUpon>ReceptionistFired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ReceptionistPhoneQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\ReceptionistPhoneQuery.Designer.cs">
+      <DependentUpon>ReceptionistPhoneQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist\ReceptionInformationManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist\ReceptionInformationManager.Designer.cs">
+      <DependentUpon>ReceptionInformationManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist\NewVIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist\NewVIP.Designer.cs">
+      <DependentUpon>NewVIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist\NewGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist\NewGuest.Designer.cs">
+      <DependentUpon>NewGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Login\ReceptionistLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\ReceptionistLogin.Designer.cs">
+      <DependentUpon>ReceptionistLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist\ReceptionistMainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist\ReceptionistMainform.Designer.cs">
+      <DependentUpon>ReceptionistMainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomDetail.Designer.cs">
+      <DependentUpon>RoomDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\TurnoverQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\TurnoverQuery.Designer.cs">
+      <DependentUpon>TurnoverQuery.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist\ChangePwd.resx">
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ChangePwdManager.resx">
+      <DependentUpon>ChangePwdManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\ManagerLogin.resx">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ManagerMain.resx">
+      <DependentUpon>ManagerMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ManagerPhoneQuery.resx">
+      <DependentUpon>ManagerPhoneQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\NewReceptionist.resx">
+      <DependentUpon>NewReceptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ReceptionistFired.resx">
+      <DependentUpon>ReceptionistFired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ReceptionistPhoneQuery.resx">
+      <DependentUpon>ReceptionistPhoneQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist\ReceptionInformationManager.resx">
+      <DependentUpon>ReceptionInformationManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist\NewVIP.resx">
+      <DependentUpon>NewVIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist\NewGuest.resx">
+      <DependentUpon>NewGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login\ReceptionistLogin.resx">
+      <DependentUpon>ReceptionistLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist\ReceptionistMainform.resx">
+      <DependentUpon>ReceptionistMainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomDetail.resx">
+      <DependentUpon>RoomDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\TurnoverQuery.resx">
+      <DependentUpon>TurnoverQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
